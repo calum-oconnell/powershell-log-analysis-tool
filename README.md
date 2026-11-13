@@ -48,11 +48,13 @@ Windows PowerShell.
 
 ## What it found across the samples
 
-**132 findings:**
+**53 findings:**
 
-- **109** auth
+- **20** auth
 - **9** PowerShell
-- **14** IOC
+- **24** IOC
+
+Two profiles stand out: one IP tried sysadmin accounts (nagios, oracle, postgres), another tried device defaults (cisco, ubnt, pi).
 
 ---
 
@@ -66,4 +68,14 @@ Windows PowerShell.
 
 ---
 
+## Sample data
+
+- `auth.log` - OpenSSH dataset from Loghub, `github.com/logpai/loghub`. He et al., *Loghub: A Large Collection of System Log Datasets*, ISSRE 2023.
+- `access.log` - real NASA traffic (July 1995, Internet Traffic Archive) plus 13 synthetic scanner requests. Those use RFC 5737 addresses, reserved for documentation and never assigned.
+- `powershell_log.txt` - constructed for this project.
+
+---
+
 ## License
+
+MIT. See `LICENSE`.

@@ -48,6 +48,7 @@ function Detect-IOCMatches {
         foreach ($path in $maliciousPaths) {
             if ($line -match [regex]::Escape($path)) {
                 $findings += "MALICIOUS PATH HIT: $path found in access log - $line"
+                break
             }
         }
     }

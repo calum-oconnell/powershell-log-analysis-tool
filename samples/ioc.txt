@@ -1,10 +1,10 @@
 # === Malicious IPs ===
-198.51.100.8
-203.0.113.5
+203.0.113.42
+198.51.100.17
 
 # === Malicious Web Paths ===
-/wp-admin
-/phpmyadmin
+/cgi-bin/phf
+/cgi-bin/test-cgi
+/etc/passwd
+/.htpasswd
 /admin
-/.env
-/config.php
