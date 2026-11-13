@@ -78,4 +78,4 @@ Two profiles stand out: one IP tried sysadmin accounts (nagios, oracle, postgres
 
 ## License
 
-MIT. See `LICENSE`.
+Code and documentation are MIT, see `LICENSE`. Sample data is third-party, see Sample data above.
